@@ -1,6 +1,11 @@
 using Eventora.Components;
+using Eventora.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<EventoraContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EventoraContext") ??
+    throw new InvalidOperationException("Connection string 'EventoraContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
