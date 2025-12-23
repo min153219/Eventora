@@ -1,18 +1,19 @@
 ﻿using Eventora.Components.Domain;
 using Eventora.Data.Configurations.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
 namespace Eventora.Data
 {
-    public class EventoraContext : DbContext
+    public class EventoraContext : IdentityDbContext<User>
     {
         public EventoraContext(DbContextOptions<EventoraContext> options) : base(options)
         {
         }
 
-        public DbSet<User> Users { get; set; } = default!;
+       
         public DbSet<Event> Events { get; set; } = default!;
         public DbSet<EventType> EventTypes { get; set; } = default!;
         public DbSet<Ticket> Tickets { get; set; } = default!;
@@ -25,6 +26,9 @@ namespace Eventora.Data
 
             // Apply seed data configurations
             builder.ApplyConfiguration(new EventTypeSeed());
+            builder.ApplyConfiguration(new RoleSeed());
+            builder.ApplyConfiguration(new UserSeed());
+            builder.ApplyConfiguration(new UserRoleSeed());
         }
     }
 }

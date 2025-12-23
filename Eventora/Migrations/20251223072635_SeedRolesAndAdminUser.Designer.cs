@@ -4,6 +4,7 @@ using Eventora.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,13 +12,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Eventora.Migrations
 {
     [DbContext(typeof(EventoraContext))]
-    partial class EventoraContextModelSnapshot : ModelSnapshot
+    [Migration("20251223072635_SeedRolesAndAdminUser")]
+    partial class SeedRolesAndAdminUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.22")
+                .HasAnnotation("ProductVersion", "8.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -100,8 +103,8 @@ namespace Eventora.Migrations
                         {
                             Id = 1,
                             CreatedBy = "System",
-                            DateCreated = new DateTime(2025, 12, 23, 17, 42, 24, 975, DateTimeKind.Local).AddTicks(9733),
-                            DateUpdated = new DateTime(2025, 12, 23, 17, 42, 24, 975, DateTimeKind.Local).AddTicks(9748),
+                            DateCreated = new DateTime(2025, 12, 23, 15, 26, 34, 798, DateTimeKind.Local).AddTicks(977),
+                            DateUpdated = new DateTime(2025, 12, 23, 15, 26, 34, 798, DateTimeKind.Local).AddTicks(990),
                             Description = "Educational and skill-building sessions",
                             TypeName = "Workshop",
                             UpdatedBy = "System"
@@ -110,8 +113,8 @@ namespace Eventora.Migrations
                         {
                             Id = 2,
                             CreatedBy = "System",
-                            DateCreated = new DateTime(2025, 12, 23, 17, 42, 24, 975, DateTimeKind.Local).AddTicks(9749),
-                            DateUpdated = new DateTime(2025, 12, 23, 17, 42, 24, 975, DateTimeKind.Local).AddTicks(9750),
+                            DateCreated = new DateTime(2025, 12, 23, 15, 26, 34, 798, DateTimeKind.Local).AddTicks(992),
+                            DateUpdated = new DateTime(2025, 12, 23, 15, 26, 34, 798, DateTimeKind.Local).AddTicks(993),
                             Description = "Live music performances",
                             TypeName = "Concert",
                             UpdatedBy = "System"
@@ -120,8 +123,8 @@ namespace Eventora.Migrations
                         {
                             Id = 3,
                             CreatedBy = "System",
-                            DateCreated = new DateTime(2025, 12, 23, 17, 42, 24, 975, DateTimeKind.Local).AddTicks(9751),
-                            DateUpdated = new DateTime(2025, 12, 23, 17, 42, 24, 975, DateTimeKind.Local).AddTicks(9751),
+                            DateCreated = new DateTime(2025, 12, 23, 15, 26, 34, 798, DateTimeKind.Local).AddTicks(994),
+                            DateUpdated = new DateTime(2025, 12, 23, 15, 26, 34, 798, DateTimeKind.Local).AddTicks(995),
                             Description = "Local community gatherings",
                             TypeName = "Community Event",
                             UpdatedBy = "System"
@@ -326,20 +329,20 @@ namespace Eventora.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a6f3fe36-da58-4b93-b62d-8b95aa780972",
+                            ConcurrencyStamp = "894ba2a3-0934-4c03-98da-874694f2e6fb",
                             CreatedBy = "System",
-                            DateCreated = new DateTime(2025, 12, 23, 17, 42, 25, 17, DateTimeKind.Local).AddTicks(5625),
-                            DateUpdated = new DateTime(2025, 12, 23, 17, 42, 25, 17, DateTimeKind.Local).AddTicks(5643),
+                            DateCreated = new DateTime(2025, 12, 23, 15, 26, 34, 849, DateTimeKind.Local).AddTicks(967),
+                            DateUpdated = new DateTime(2025, 12, 23, 15, 26, 34, 849, DateTimeKind.Local).AddTicks(1030),
                             Email = "admin@eventora.com",
                             EmailConfirmed = true,
                             FullName = "System Administrator",
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@EVENTORA.COM",
                             NormalizedUserName = "ADMIN@EVENTORA.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAECz+nsa19s6A55dScYSYwB3jAsVdWyILzOGVwNA6EujTsJFOHqLWpJSo21MBaEUbxg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELo41QQnzdEHebtTGu+F4wjahc1F7j1CLjdA6HYC6pSv1VSxzNYl+0q+X29ePhFOZQ==",
                             PhoneNo = "+65 1234 5678",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "04c00659-731b-4a8c-a14c-6bd22125ba8a",
+                            SecurityStamp = "4dfe6e8d-d0e9-4b97-b934-888b13d58657",
                             TwoFactorEnabled = false,
                             UpdatedBy = "System",
                             UserName = "admin@eventora.com"
