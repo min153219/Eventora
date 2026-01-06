@@ -1,0 +1,444 @@
+﻿@page "/events"
+
+<PageTitle>Browse Events - Eventora</PageTitle>
+
+<div class="events-page">
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">Discover Events</h1>
+            <p class="page-subtitle">Find your next unforgettable experience</p>
+        </div>
+    </div>
+
+    <!-- Search and Filter Section -->
+    <div class="search-section">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-6">
+                    <div class="search-box">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search events...">
+                        <button class="btn btn-primary">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-select form-select-lg">
+                        <option selected>All Categories</option>
+                        <option>Music & Concerts</option>
+                        <option>Arts & Culture</option>
+                        <option>Sports & Fitness</option>
+                        <option>Business & Tech</option>
+                        <option>Food & Drink</option>
+                        <option>Learning & Skills</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-select form-select-lg">
+                        <option selected>All Dates</option>
+                        <option>Today</option>
+                        <option>This Weekend</option>
+                        <option>This Week</option>
+                        <option>This Month</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events Grid -->
+    <div class="events-grid-section">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Event Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card">
+                        <div class="event-image music-gradient">
+                            <span class="event-badge">Trending 🔥</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="event-category">Music</span>
+                            <h5 class="card-title">Sunset Jazz Festival 2026</h5>
+                            <div class="event-meta">
+                                <div><i class="bi bi-calendar"></i> Fri, Jan 17, 2026</div>
+                                <div><i class="bi bi-clock"></i> 8:00 PM</div>
+                                <div><i class="bi bi-geo-alt"></i> Marina Bay</div>
+                            </div>
+                            <p class="card-text">Experience an unforgettable evening of smooth jazz as the sun sets over the bay with world-class musicians.</p>
+                            <div class="event-footer">
+                                <span class="event-price">$45</span>
+                                <a href="#" class="btn btn-primary">Get Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card">
+                        <div class="event-image art-gradient">
+                            <span class="event-badge">New ✨</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="event-category">Arts</span>
+                            <h5 class="card-title">Contemporary Art Showcase</h5>
+                            <div class="event-meta">
+                                <div><i class="bi bi-calendar"></i> Sat, Jan 18, 2026</div>
+                                <div><i class="bi bi-clock"></i> 7:00 PM</div>
+                                <div><i class="bi bi-geo-alt"></i> Downtown Arts Center</div>
+                            </div>
+                            <p class="card-text">Discover emerging artists and groundbreaking contemporary works in this exclusive gallery opening event.</p>
+                            <div class="event-footer">
+                                <span class="event-price">Free</span>
+                                <a href="#" class="btn btn-primary">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card">
+                        <div class="event-image food-gradient">
+                            <span class="event-badge">Selling Fast ⚡</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="event-category">Food & Drink</span>
+                            <h5 class="card-title">Street Food Carnival</h5>
+                            <div class="event-meta">
+                                <div><i class="bi bi-calendar"></i> Sun, Jan 19, 2026</div>
+                                <div><i class="bi bi-clock"></i> 12:00 PM</div>
+                                <div><i class="bi bi-geo-alt"></i> City Park</div>
+                            </div>
+                            <p class="card-text">Taste cuisines from around the world with 50+ food vendors, live music, and entertainment for all ages.</p>
+                            <div class="event-footer">
+                                <span class="event-price">$20</span>
+                                <a href="#" class="btn btn-primary">Get Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card">
+                        <div class="event-image tech-gradient">
+                            <span class="event-badge">Popular 🌟</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="event-category">Technology</span>
+                            <h5 class="card-title">Tech Innovation Summit</h5>
+                            <div class="event-meta">
+                                <div><i class="bi bi-calendar"></i> Mon, Jan 20, 2026</div>
+                                <div><i class="bi bi-clock"></i> 9:00 AM</div>
+                                <div><i class="bi bi-geo-alt"></i> Convention Center</div>
+                            </div>
+                            <p class="card-text">Join industry leaders and innovators for a day of inspiring talks, networking, and emerging technology demos.</p>
+                            <div class="event-footer">
+                                <span class="event-price">$75</span>
+                                <a href="#" class="btn btn-primary">Get Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card">
+                        <div class="event-image sports-gradient">
+                            <span class="event-badge">This Week 📅</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="event-category">Sports</span>
+                            <h5 class="card-title">City Marathon 2026</h5>
+                            <div class="event-meta">
+                                <div><i class="bi bi-calendar"></i> Sat, Jan 25, 2026</div>
+                                <div><i class="bi bi-clock"></i> 7:00 AM</div>
+                                <div><i class="bi bi-geo-alt"></i> City Center</div>
+                            </div>
+                            <p class="card-text">Run through scenic city streets in our annual marathon. All fitness levels welcome with 5K, 10K, and full marathon options.</p>
+                            <div class="event-footer">
+                                <span class="event-price">$35</span>
+                                <a href="#" class="btn btn-primary">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card">
+                        <div class="event-image workshop-gradient">
+                            <span class="event-badge">Limited Spots 🎯</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="event-category">Workshop</span>
+                            <h5 class="card-title">Photography Masterclass</h5>
+                            <div class="event-meta">
+                                <div><i class="bi bi-calendar"></i> Sun, Jan 26, 2026</div>
+                                <div><i class="bi bi-clock"></i> 2:00 PM</div>
+                                <div><i class="bi bi-geo-alt"></i> Creative Studio</div>
+                            </div>
+                            <p class="card-text">Learn professional photography techniques from award-winning photographers. Hands-on workshop with equipment provided.</p>
+                            <div class="event-footer">
+                                <span class="event-price">$95</span>
+                                <a href="#" class="btn btn-primary">Get Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary btn-lg">Load More Events</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .events-page {
+        background: #f8f9fa;
+    }
+
+    /* Page Header */
+    .page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 4rem 0 3rem;
+        color: white;
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.25rem;
+        opacity: 0.95;
+    }
+
+    /* Search Section */
+    .search-section {
+        padding: 3rem 0;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .search-box {
+        position: relative;
+    }
+
+        .search-box input {
+            padding-right: 60px;
+            border-radius: 50px;
+            border: 2px solid #e9ecef;
+        }
+
+            .search-box input:focus {
+                border-color: #667eea;
+                box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.1);
+            }
+
+        .search-box .btn {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+        }
+
+    .form-select {
+        border-radius: 50px;
+        border: 2px solid #e9ecef;
+    }
+
+        .form-select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.1);
+        }
+
+    /* Events Grid */
+    .events-grid-section {
+        padding: 3rem 0 5rem;
+    }
+
+    .event-card {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        border: 1px solid #e9ecef;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .event-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+
+    .event-image {
+        height: 200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .event-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .event-category {
+        display: inline-block;
+        background: #f0f4ff;
+        color: #667eea;
+        padding: 0.35rem 1rem;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .event-card .card-body {
+        padding: 1.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .event-card .card-title {
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .event-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+        .event-meta i {
+            margin-right: 0.5rem;
+            color: #667eea;
+        }
+
+    .event-card .card-text {
+        color: #6c757d;
+        margin-bottom: 1.5rem;
+        flex: 1;
+    }
+
+    .event-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        border-top: 1px solid #e9ecef;
+    }
+
+    .event-price {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #667eea;
+    }
+
+    .event-card .btn-primary {
+        border-radius: 50px;
+        padding: 0.6rem 1.75rem;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        border: none;
+        font-weight: 600;
+    }
+
+        .event-card .btn-primary:hover {
+            background: linear-gradient(135deg, #764ba2, #667eea);
+            transform: scale(1.05);
+        }
+
+    /* Gradients */
+    .music-gradient {
+        background: linear-gradient(135deg, #FF006E, #FF6B35);
+    }
+
+    .art-gradient {
+        background: linear-gradient(135deg, #8338EC, #00D4FF);
+    }
+
+    .food-gradient {
+        background: linear-gradient(135deg, #FFBE0B, #FF006E);
+    }
+
+    .tech-gradient {
+        background: linear-gradient(135deg, #00D4FF, #8338EC);
+    }
+
+    .sports-gradient {
+        background: linear-gradient(135deg, #06D6A0, #118AB2);
+    }
+
+    .workshop-gradient {
+        background: linear-gradient(135deg, #F72585, #7209B7);
+    }
+
+    /* Load More Button */
+    .btn-outline-primary {
+        border-radius: 50px;
+        padding: 0.75rem 3rem;
+        border: 2px solid #667eea;
+        color: #667eea;
+        font-weight: 600;
+    }
+
+        .btn-outline-primary:hover {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-color: #667eea;
+            color: white;
+        }
+
+    /* Responsive */
+    @@media (max-width: 992px) {
+        .page-title {
+            font-size: 2.25rem;
+        }
+
+        .page-header {
+            padding: 3rem 0 2rem;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .page-title {
+            font-size: 1.75rem;
+        }
+
+        .search-section {
+            padding: 2rem 0;
+        }
+    }
+</style>
