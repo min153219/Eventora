@@ -39,7 +39,7 @@ builder.Services.AddIdentityCore<User>(options =>
     options.Password.RequireNonAlphanumeric = true;
     options.Password.RequiredLength = 6;
 })
-    .AddRoles<IdentityRole>()  // Add this to support roles
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<EventoraContext>()
     .AddSignInManager()
     .AddDefaultTokenProviders();
