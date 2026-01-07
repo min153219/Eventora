@@ -1,19 +1,14 @@
-﻿using Eventora.Components.Domain;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Eventora.Components.Domain;
 using Eventora.Data.Configurations.Entities;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
+
 
 namespace Eventora.Data
 {
-    public class EventoraContext : IdentityDbContext<User>
-    {
-        public EventoraContext(DbContextOptions<EventoraContext> options) : base(options)
-        {
-        }
+    public class EventoraContext(DbContextOptions<EventoraContext> options): IdentityDbContext<EventoraContextUser>(options)
 
-       
+    {
         public DbSet<Event> Events { get; set; } = default!;
         public DbSet<EventType> EventTypes { get; set; } = default!;
         public DbSet<Ticket> Tickets { get; set; } = default!;
