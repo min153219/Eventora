@@ -23,7 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Components\Pages\Events\" />
+	  <Folder Include="Components\Pages\EventsPages\" />
 	</ItemGroup>
 
 
